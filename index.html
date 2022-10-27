@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Aplikasi Rak Buku</title>
+  </head>
+  <body>
+    <header>
+      <h1>Aplikasi Rak Buku</h1>
+    </header>
+    <div class="container">
+      <fieldset class="input">
+        <legend>Silahkan masukkan buku yang akan dibaca :)</legend>
+        <form action="" id="inputBuku">
+          <label for="buku">Judul Buku</label>
+          <input type="text" name="buku" id="buku" placeholder="Masukkan judul buku" required />
+          <label for="penulis">Penulis</label>
+          <input type="text" name="penulis" id="penulis" placeholder="Masukkan penulis buku" required />
+          <label for="tahun">Tahun Terbit</label>
+          <input type="number" name="tahun" id="tahun" placeholder="Masukkan tahun terbit buku" required />
+          <input type="submit" name="submit" value="Mulai membaca buku" />
+        </form>
+      </fieldset>
+      <fieldset class="pencarian">
+        <legend>Cari Buku</legend>
+        <input type="text" name="cari" id="cari" placeholder="Silahkan masukkan kata kunci" />
+        <button class="tombolReset">X</button>
+      </fieldset>
+      <section class="rakBuku">
+        <fieldset class="listBuku" id="belumSelesai"></fieldset>
+        <fieldset class="listBuku" id="sudahSelesai"></fieldset>
+      </section>
+    </div>
+    <footer>
+      <footer>
+        <h2>&copy; Copyrights : <a href="#" target="_blank">Hendra Rizal Gunawan</a></h2>
+      </footer>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>
